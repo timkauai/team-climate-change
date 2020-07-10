@@ -8,6 +8,14 @@
 
 /** !! COLOR SCHEME: #FFFFFF, #11122, #6c8dc6**/
 
+.home-logo {
+  margin-left: -15%;
+}
+
+.home-logo-text {
+  margin-left: -40%;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -28,24 +36,46 @@ p {
   color: rgba(255, 255, 255, .9);
 }
 
-.parallax-container .section {
-  width: 100%;
+.parallax-container .section-a {
+  padding-top: 8vh;
+  width: 50vw;
+  height: 75vh;
+}
+
+.parallax-container .section-b {
+  padding-top: 18vh;
+  width: 80vw;
+  height: 60vh;
 }
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
 
   #index-banner .section {
     top: 10%;
+  }
+
+  .home-logo {
+    margin-left: 10%;
+  }
+
+  .home-logo-text {
+    margin-left: 10%;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+
+  .home-logo {
+    margin-left: 1%;
+  }
+
+  .home-logo-text {
+    margin-left: 10%;
+    width: 100%;
   }
 }
 
@@ -67,4 +97,8 @@ footer.page-footer {
 
 .card {
   min-height: 342px;
+}
+
+.parallax {
+  height: 75vh;
 }
