@@ -33,7 +33,7 @@ p {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255, 255, 255, .9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .parallax-container .section-a {
@@ -48,8 +48,7 @@ p {
   height: 60vh;
 }
 
-@media only screen and (max-width : 992px) {
-
+@media only screen and (max-width: 992px) {
   #index-banner .section {
     top: 10%;
   }
@@ -62,9 +61,13 @@ p {
     margin-left: 10%;
     width: 100%;
   }
+
+  .mobile-text-smaller {
+    font-size: 1.25vw;
+  }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
   }
@@ -76,6 +79,10 @@ p {
   .home-logo-text {
     margin-left: 10%;
     width: 100%;
+  }
+
+  .mobile-text-smaller {
+    font-size: 1.5vw;
   }
 }
 
@@ -142,7 +149,7 @@ footer.page-footer {
 }
 
 .kaiapuni-dark-blue {
-  color: #7B98CC;
+  color: #7b98cc;
 }
 
 .kaiapuni-blue-btn {
