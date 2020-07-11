@@ -102,3 +102,53 @@ footer.page-footer {
 .parallax {
   height: 75vh;
 }
+
+.blog-section img {
+  width: 25vw;
+  float: left;
+  height: 15vh;
+}
+
+.blog-one .content-preview {
+  height: 25vh;
+  width: 70vw;
+  padding-left: 30vw;
+}
+
+.two-blogs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "blog-two blog-three";
+  grid-column-gap: 5vw;
+}
+
+.blog-two {
+  grid-area: blog-two;
+  padding: 2vh 3vw;
+}
+
+.blog-three {
+  grid-area: blog-three;
+  padding: 2vh 3vw;
+}
+
+.blog-section {
+  width: 85vw;
+  margin-left: 7.5vw;
+}
+
+.kaiapuni-blue {
+  color: #6c8dc6;
+}
+
+.kaiapuni-dark-blue {
+  color: #7B98CC;
+}
+
+.kaiapuni-blue-btn {
+  background-color: #6c8dc6;
+}
+
+.kaiapuni-green {
+  color: #b7e773;
+}

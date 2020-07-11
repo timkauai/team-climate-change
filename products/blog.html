@@ -2,15 +2,122 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kaiapuni Capsules</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body>
-    <p>LIsteing to ung gravey</p>
-    <p>LIsteing to ung gravey</p>
-    <a href="../index.html">back</a>
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="../index.html" class="brand-logo">Kaiapuni Capsules</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="./strawberry-box.html">Strawberry Box</a></li>
+                <li><a href="./apple-box.html">Apple Box</a></li>
+                <li><a href="#">Watermelon Box</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="./strawberry-box.html">Strawberry Box</a></li>
+                <li><a href="./apple-box.html">Apple Box</a></li>
+                <li><a href="#">Watermelon Box</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <h1 class="center" style="margin-bottom: 10vh;">The Kaiapuni Capsules Blog</h1>
+
+    <div class="blog-section">
+        <a href="./blog/one.html" class="blog-one">
+            <img src="../images/coral.jpg" alt="">
+            <div class="content-preview">
+                <h5>What is BECCS?</h5>
+                <p>Today, there are mentions of this BECCS technique, but what is it really?</p>
+                <a href="./blog/one.html">Read More</a>
+            </div>
+        </a>
+        <div class="two-blogs">
+            <a href="blog/two.html" class="blog-two">
+                <img src="../images/chiller.png" alt="">
+                <div>
+                    <h5>Lorem ipsum dolor</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque, ullam, officiis quis
+                        voluptatum aperiam alias cum nobis doloribus, dicta quasi deleniti ratione aut quam tempora nisi
+                        voluptatibus? Quidem, asperiores!</p>
+                </div>
+                <a href="./blog/two.html">Read More</a>
+            </a>
+            <a href="./blog/three.html" class="blog-three">
+                <img src="../images/chiller.png" alt="">
+                <div>
+                    <h5>Who we are</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cumque, ullam, officiis quis
+                        voluptatum aperiam alias cum nobis doloribus, dicta quasi deleniti ratione aut quam tempora
+                        nisi
+                        voluptatibus? Quidem, asperiores!</p>
+                </div>
+                <a href="./blog/three.html">Read More</a>
+            </a>
+        </div>
+
+        <div class="row center" style="margin-top: 15vh; margin-bottom: 5vh;">
+            <a href="../oops-newsletter.html" id="download-button"
+                class="btn-large waves-effect waves-light teal lighten-1">And there is more to come</a>
+        </div>
+    </div>
+
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Company Bio</h5>
+                    <p class="grey-text text-lighten-4">We are a team of college students working on this project
+                        like
+                        it's our
+                        full time job. Any amount would help support and continue development on this project and is
+                        greatly
+                        appreciated.</p>
+
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js"></script>
+    <script src="../js/materialize.js"></script>
+    <script src="../js/init.js"></script>
+
 </body>
 
 </html>
