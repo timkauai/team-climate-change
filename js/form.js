@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-  var GOOGLE_SCRIPT_URL = 'PUT_YOUR_URL_HERE';
+  var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyWIaxH7yPSomkkjde2C8ldOP2ZDqZmDadrR7xZacgHkcKEuwuQ/exec';
 
   var today = new Date();
   var dd = String(today.getDate()).padStart(2, '0');
@@ -9,28 +9,28 @@ $(document).ready(function(){
   today = mm + '/' + dd + '/' + yyyy;
 
   $('.tooltipped').tooltip();
-	$("select").formSelect();
+  $("select").formSelect();
 
   var getUrlParameter = function getUrlParameter(sParam) {
-      var sPageURL = window.location.search.substring(1),
-          sURLVariables = sPageURL.split('&'),
-          sParameterName,
-          i;
+    var sPageURL = window.location.search.substring(1),
+      sURLVariables = sPageURL.split('&'),
+      sParameterName,
+      i;
 
-      for (i = 0; i < sURLVariables.length; i++) {
-          sParameterName = sURLVariables[i].split('=');
+    for (i = 0; i < sURLVariables.length; i++) {
+      sParameterName = sURLVariables[i].split('=');
 
-          if (sParameterName[0] === sParam) {
-              return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-          }
+      if (sParameterName[0] === sParam) {
+        return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
       }
+    }
   };
 
   var product = getUrlParameter('product');
   var $form = $("#orderForm");
 
-  $("form").on("submit", function(){
-  	event.preventDefault();
+  $("form").on("submit", function () {
+    event.preventDefault();
 
     var stuff = $form.serializeObject();
     stuff.date = today;
@@ -42,13 +42,15 @@ $(document).ready(function(){
       method: "GET",
       dataType: "json",
       data: stuff,
-      success: function() {
-          console.log('form submit success')
-          M.toast({html: 'We will get back to you shortly.'})
-          $("#submitButton").removeClass("pink");
-          $("#submitButton").removeClass("lighten-3");
-          $("#submitButton").text("Response Sent");
-          $("#submitButton").addClass("disabled");
+      success: function () {
+        console.log('form submit success')
+        M.toast({
+          html: 'We will get back to you shortly.'
+        })
+        $("#submitButton").removeClass("pink");
+        $("#submitButton").removeClass("lighten-3");
+        $("#submitButton").text("Response Sent");
+        $("#submitButton").addClass("disabled");
       }
     })
   })
