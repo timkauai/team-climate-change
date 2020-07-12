@@ -6,9 +6,7 @@ const HOTJAR_ID = 1419537;
 		$('.sidenav').sidenav();
 		$('.parallax').parallax();
 
-		<
-		!--Global site tag(gtag.js) - Google Analytics-- >
-			window.dataLayer = window.dataLayer || [];
+		window.dataLayer = window.dataLayer || [];
 
 		function gtag() {
 			dataLayer.push(arguments);
