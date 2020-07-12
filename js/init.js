@@ -23,7 +23,7 @@ const HOTJAR_ID = 1419537;
 		(h.hj.q = h.hj.q || []).push(arguments)
 	};
 	h._hjSettings = {
-		hjid: HOTJAR_ID,
+		hjid: 1897496,
 		hjsv: 6
 	};
 	a = o.getElementsByTagName('head')[0];
