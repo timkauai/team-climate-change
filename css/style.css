@@ -163,3 +163,14 @@ footer.page-footer {
 .kaiapuni-green {
   color: #b7e773;
 }
+
+.an-img {
+  position: absolute;
+  width: 100%;
+  position: absolute;
+  top: 10vh;
+}
+
+.an-img-container {
+  height: 30vh;
+}
