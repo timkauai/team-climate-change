@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwLrg9xe0Yltygxf6ekFD0xtpShnSkvxTSvyCcFPXpeRTIXWRY/exec';
+  var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyWIaxH7yPSomkkjde2C8ldOP2ZDqZmDadrR7xZacgHkcKEuwuQ/exec';
 
   var today = new Date();
   var dd = String(today.getDate()).padStart(2, '0');
